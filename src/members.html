@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html class="sans-serif-family">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
+  <title>Membres de la Banda</title>
+</head>
+
+<body class="body">
+  <include src="./views/header.html"></include>
+  <h1 class="head1">Membres de la Banda</h1>
+  <div class="m-auto flex flex-col small:flex-row justify-around content-around items-start flex-wrap text-center small:max-w-[540px] medium:max-w-[720px] large:max-w-[960px] xl:max-w-[1140px] xxl:max-w-[1320px]">
+    <include src="./views/card.html">
+      {
+        "num": "1"
+      }
+    </include>
+    <include src="./views/card.html">
+      {
+        "num": "2"
+      }
+    </include>
+    <include src="./views/card.html">
+      {
+        "num": "3"
+      }
+    </include>
+    <include src="./views/card.html">
+      {
+        "num": "4"
+      }
+    </include>
+  </div>
+  <include src="./views/footer.html"></include>
+  <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+</body>
+
+</html>
